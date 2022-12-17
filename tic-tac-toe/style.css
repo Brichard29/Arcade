@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@300&family=Splash&display=swap');
+
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1{
+    color: #FF0000;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+main{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    width: 35rem;
+    height: 35rem;
+    background-color: black;
+}
+
+.cell{
+    border: 0.5px solid #49FF00;
+    cursor: pointer;
+    font-size: 9rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    color: #49FF00;
+}
+
+
+
+
+button{
+    width: 10rem;
+    height: 2rem;
+    margin-top: 2rem;
+    background-color: #FF0000;
+    color: #e7e7d5;
+    border-radius: 20px;
+    font-size: large;
+    text-align: center;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+    border-left: none;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+    border-right: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    border-bottom: none;
+}
+
+.cell:hover {
+    background-color: rgba(31, 31, 31, 0.644);
+}
+
+button:hover{
+    /* box-shadow: #49FF00 0px 10px 70px 0px; */
+    cursor: pointer;
+    background-color: #a00000;
+}
+
+
+

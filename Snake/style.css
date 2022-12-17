@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  font-family: 'Press Start 2P', cursive;
+  color: #2078df;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+main {
+    display:grid;
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    width: 40rem;
+    height: 40rem;
+    background-color: black;
+}
+
+.cell {
+    border: none;
+    
+}
+
+.cell.apple {
+    background-color: red;
+    border-radius: 50%;
+}
+
+.cell.snake {
+    background-color: #49FF00;
+}
+
+button {
+    border-radius: 0.2rem;
+    background-color: #FF0000;
+    color: white;
+}
+
+#controls {
+    display: none;
+    grid-template: repeat(3, 1fr)/repeat(3,1fr);
+}
+
+button.up {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+button.down {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+button.right {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+button.left {
+    grid-row: 2/3;
+    grid-column:1/2;
+}
+
+#board {
+    border: 1px solid #49FF00;
+    margin-top: 1rem;
+}
+
+h1 {
+    color:#49FF00;
+}
+
+#score {
+    color: #FF9300;
+}
+
+.reset {
+    margin-top: 1rem;
+    width: 6rem;
+    height: 3rem
+}
+
+.start-game {
+    height: 3rem;
+}
+
+.left,
+.right,
+.up,
+.down {
+    height: 1.5rem;
+}
+
+button:hover {
+    background-color: #bb0000;
+}
